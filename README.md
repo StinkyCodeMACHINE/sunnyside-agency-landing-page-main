@@ -19,7 +19,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 ### Links
 
-- Live Site URL: [https://amazing-tartufo-5c3bd7.netlify.app/](https://amazing-tartufo-5c3bd7.netlify.app/)
+- Live Site URL: [https://deluxe-dodol-97bc0b.netlify.app/](https://deluxe-dodol-97bc0b.netlify.app/)
 
 ## My process
 
