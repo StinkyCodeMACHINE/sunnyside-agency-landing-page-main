@@ -1,0 +1,113 @@
+@use "../util/functions" as u;
+
+.header {
+  background-image: url("/assets/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 2.1rem 3rem 21rem 2.3rem;
+  display: flex;
+  gap: 6.5rem;
+  flex-direction: column;
+  justify-content: center;
+
+  &__top-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &__logo {
+      width: 180px;
+    }
+
+    &__nav-options {
+      display: flex;
+      gap: 3rem;
+      color: var(--white);
+      align-items: center;
+      font-size: 1.1rem;
+      position: relative;
+
+      &__option:last-child {
+        font-family: "Fraunces", serif;
+        color: var(--very-dark-desaturated-blue);
+        font-size: 1em;
+        padding: 1rem 1.5rem;
+        background-color: var(--white);
+        border-radius: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #73cdff;
+          color: var(--white);
+        }
+      }
+
+      @media (max-width: 870px) {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        background-color: var(--white);
+        color: var(--very-dark-grayish-blue);
+        padding-block: 2rem;
+        width: 99%;
+
+        &::after {
+          content: "";
+          width: 0;
+          height: 0;
+          position: absolute;
+          border-bottom: 30px solid var(--white);
+          border-left: 30px solid transparent;
+          right: 0;
+          top: -8%;
+        }
+
+        &__option:last-child {
+          background-color: var(--yellow);
+        }
+
+        &.menu-opened {
+          display: flex;
+          left: 1%;
+          top: 250%;
+        }
+      }
+    }
+
+    &__menu-icon {
+      display: none;
+      cursor: pointer;
+
+      &.menu-opened {
+        filter: brightness(80%);
+      }
+
+      @media (max-width: 870px) {
+        display: block;
+      }
+    }
+  }
+
+  &__heading {
+    font-family: "Fraunces", serif;
+    text-align: center;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 3.5rem;
+    letter-spacing: 0.7rem;
+  }
+
+  &__arrow-down {
+    width: 40px;
+    height: 100px;
+    margin-inline: auto;
+  }
+
+  @media (max-width: 870px) {
+    background-image: url("/assets/mobile/image-header.jpg");
+  }
+}

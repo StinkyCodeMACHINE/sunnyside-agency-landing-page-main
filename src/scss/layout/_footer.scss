@@ -1,0 +1,28 @@
+@use "../util/functions" as u;
+
+.footer {
+  background-color: var(--unlisted-green);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  gap: 1rem;
+  > img {
+    filter: invert(48%) sepia(38%) saturate(449%) hue-rotate(118deg)
+      brightness(92%) contrast(91%);
+    width: 180px;
+  }
+
+  &__nav-options {
+    color: var(--dark-moderate-cyan);
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__media-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+}
