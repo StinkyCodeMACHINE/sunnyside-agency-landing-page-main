@@ -139,11 +139,11 @@ function openMenu() {
   </main>
   <footer class="footer">
     <img class="footer__logo" src="/assets/logo.svg" alt="sunnyside log" />
-    <nav class="footer__nav-options">
+    <div class="footer__nav-options">
       <div>About</div>
       <div>Services</div>
       <div>Projects</div>
-    </nav>
+    </div>
     <div class="footer__media-icons">
       <img src="/assets/icon-facebook.svg" alt="facebook icon" />
       <img src="/assets/icon-instagram.svg" alt="instagram icon" />
